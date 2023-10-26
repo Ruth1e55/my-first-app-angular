@@ -1,2 +1,17 @@
-<h2>This is app component!</h2>
-<app-servers></app-servers>
+<div class="container">
+  <div class="row">
+    <div class="col-xl-12">
+      <h2>This is app component!</h2>
+      <hr>
+      <label>Server Name : </label>
+      <br>
+      <input [(ngModel)]="name" type="text">
+      <br>
+      <br>
+      <button (click)="addServer(name)" class="btn-primary">Add Server</button>
+      <br>
+      <p [innerHtml]="serverCreation"></p>
+      <app-servers></app-servers>
+    </div>
+  </div>
+</div>
