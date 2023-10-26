@@ -14,7 +14,7 @@ export class AppComponent {
     this.name = name;
     this.serverCreation = "The Server has been created : " + name
     ServerComponent.NoOfAlerts += 1
-    ServerComponent.updateNumbers(ServerComponent.NoOfAlerts)
+    // ServerComponent.updateNumbers(ServerComponent.NoOfAlerts)
   }
 
 
