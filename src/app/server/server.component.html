@@ -1,1 +1,11 @@
 <h3>This is a server component</h3>
+<button (click)="onDisplayDetails()">
+  {{displayDetails ? 'Hide Details' : 'Display Details'}}
+</button>
+<p *ngIf="displayDetails">Secret Sauce: 007</p>
+
+<div *ngFor="let log of logs; let i = index" 
+     [ngStyle]="{'color': i > 4 ? 'red' : 'black'}" 
+     [ngClass]="{'fifth-log': i > 4}">
+  {{log}}
+</div>
